@@ -25,15 +25,16 @@ public class LoginController {
 
     @RequestMapping("/")
     public String home(Model model) {
-        return "index";
+        return "home";
     }
 
     @RequestMapping("/login")
     public String login(Model model) {
+        logger.info("login Page");
         return "login";
     }
 
-    @RequestMapping("/grlife_sign")
+    @RequestMapping("/signup")
     public String signup(Model model) {
         return "signup";
     }
